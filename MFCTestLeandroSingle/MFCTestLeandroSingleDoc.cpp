@@ -56,10 +56,12 @@ void CMFCTestLeandroSingleDoc::Serialize(CArchive& ar)
 	if (ar.IsStoring())
 	{
 		// TODO: add storing code here
+		ar << m_sName;
 	}
 	else
 	{
 		// TODO: add loading code here
+		ar >> m_sName;
 	}
 }
 
@@ -142,5 +144,6 @@ void CMFCTestLeandroSingleDoc::OnSetName()
 	{
 		m_sName = dlg.m_sName;
 		this->UpdateAllViews(NULL);
+		SetModifiedFlag(TRUE);
 	}
 }
