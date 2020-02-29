@@ -57,6 +57,7 @@ BOOL CMFCTestLeandroSingleView::PreCreateWindow(CREATESTRUCT& cs)
 
 void CMFCTestLeandroSingleView::OnDraw(CDC* pDC)
 {
+	//Test Push
 	CMFCTestLeandroSingleDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
