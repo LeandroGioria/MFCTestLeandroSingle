@@ -46,6 +46,7 @@ BOOL CMFCTestLeandroSingleDoc::OnNewDocument()
 
 	// TODO: add reinitialization code here
 	// (SDI documents will reuse this document)
+	m_sName.Empty();
 
 	return TRUE;
 }
